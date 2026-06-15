@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tea Classifier"
+            android:textColor="@color/dark_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Enter unknown sample TDS and R value. The app finds the nearest tea using Euclidean distance."
+            android:textColor="@color/dark_text"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/inputTds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Unknown TDS value, e.g. 150"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Unknown Red/R value, e.g. 52"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnClassify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Classify Tea" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Clear" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Result will appear here"
+            android:textColor="@color/dark_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Reference points used:\nWatawala = TDS 311.24, R 37.58\nB.O.P. = TDS 152.04, R 50.53\nO.P.1 = TDS 97.91, R 61.16"
+            android:textColor="@color/dark_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
